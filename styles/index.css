@@ -38,9 +38,42 @@ body{
     padding-bottom: 20px;
 }
 .heading{
-    font-size: 3rem;
     margin: var(--margin);
     font-weight: 700;
+}
+/* extra small devices */
+@media only screen and (max-width: 575.98px) {
+    .heading{
+        font-size: 1.5rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .heading{
+        font-size: 1.5rem;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .heading{
+        font-size: 3rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .heading{
+        font-size: 3rem;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .heading{
+        font-size: 3rem;
+    }
 }
 button{
     outline: var(--outline);
@@ -61,6 +94,9 @@ i{
 span{
     padding-top: 10px;
     font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .second-section{
     grid-column-gap: 10px
@@ -72,7 +108,7 @@ input{
     font-size: 2rem;
     text-align: center;
     background-color: var(--color);
-    display: none;
+    width: 100%;
 }
 
 input:focus{
@@ -95,4 +131,49 @@ input:focus{
     border: none;
     height: 40px;
     padding: 0px 10px;
+}
+#searchIcon{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 2.3rem;
+
+}
+.inputBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* extra small devices */
+@media only screen and (max-width: 575.98px) {
+    .inputBox{
+        width: 200px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .inputBox{
+        width: 200px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+    .inputBox{
+        width: 390px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .inputBox{
+        width: 390px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .inputBox{
+        width: 390px;
+    }
 }
